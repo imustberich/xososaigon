@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sài Gòn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #0c0909;
+      height: 100vh;
+      overflow: hidden;
+      padding-top: 10%;
+    }
+
+    .scaled-wrapper {
+      width: 412px;
+      height: 914px;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .scaled-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(0.15);
+      transform-origin: top left;
+      width: 2746px; /* 412 / 0.15 */
+      height: 6093px; /* 914 / 0.15 */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="scaled-wrapper">
+    <iframe class="scaled-frame" src="https://tot999.vercel.app/" title="Scaled Page"></iframe>
+  </div>
+</body>
+</html>
